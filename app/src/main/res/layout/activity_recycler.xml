@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".RecyclerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_arrow_back"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="상품 목록"
+        android:fontFamily="@font/font"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="0dp"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="2dp"
+
+        tools:listitem="@layout/item_data"
+        android:orientation="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn_myinfo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="My 정보"
+            android:fontFamily="@font/font"
+            />
+        <Button
+            android:id="@+id/btn_fav"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="즐겨찾기"
+            android:fontFamily="@font/font"
+            />
+    </LinearLayout>
+</LinearLayout>
