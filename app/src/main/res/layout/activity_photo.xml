@@ -18,12 +18,22 @@
             />
     </RelativeLayout>
     <LinearLayout
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_weight="1"
         android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ex) 아래 그림과 같이 강아지가 많이 나오게 찍어주세요"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/font"/>
+
         <ImageView
             android:id="@+id/iv_photo"
             android:layout_width="300dp"
@@ -31,7 +41,7 @@
             android:src="@drawable/ic_camera"
             />
         <LinearLayout
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="60dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
@@ -90,4 +100,5 @@
             android:text="즐겨찾기"
             />
     </LinearLayout>
+
 </LinearLayout>

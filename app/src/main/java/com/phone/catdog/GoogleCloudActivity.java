@@ -20,11 +20,11 @@ public class GoogleCloudActivity extends AppCompatActivity {
     //내정보,즐겨찾기
     Button btn_myinfo,btn_fav;
     //추출색상,추천색상
-    ImageView fabColor, devColor;
+    ImageView fabColor, devColor, devcolor2;
 
     String cloth, size;
 
-    int d,e,f;
+    int d,e,f,g,h,i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,8 +78,27 @@ public class GoogleCloudActivity extends AppCompatActivity {
             f = c-255;
         }
 
+        if(a-127 < 0){
+            g = -(a-127);
+        }else{
+            g = a-127;
+        }
+        if(b-127 < 0){
+            h = -(b-127);
+        }else{
+            h = b-127;
+        }
+        if(c-127 < 0){
+            i = -(c-127);
+        }else{
+            i = c-127;
+        }
+
         devColor = findViewById(R.id.color2);
         devColor.setBackgroundColor(Color.rgb(d,e,f));
+
+        devcolor2 = findViewById(R.id.color3);
+        devcolor2.setBackgroundColor(Color.rgb(g,h,i));
 
         iv_photo = findViewById(R.id.iv_photo2);
         iv_photo.setImageBitmap(bm);
